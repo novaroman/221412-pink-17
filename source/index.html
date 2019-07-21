@@ -8,14 +8,12 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__intro">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="177" height="124" alt="Логотип приложения PINK">
-        <button class="btn__open-menu" type="button">Открыть меню</button>
-      </div>
       <nav class="main-nav">
+        <div class="main-nav__intro main-nav__intro--hidden">
+          <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="72" height="25" alt="Логотип приложения PINK">
+          <button class="btn__open-menu btn__close-menu" type="button"></button>
+        </div>
         <div class="main-nav__wrapper">
-          <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="177" height="124" alt="Логотип приложения PINK">
-          <button class="btn__close-menu" type="button">Закрыть меню</button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -36,8 +34,9 @@
 
     <main class="page-main">
       <section class="download">
-        <img class="download__photo-example" src="img/bg-back-mobile@1x.jpg" width="964" height="1395" alt="Пример использования приложения">
-        <img class="download__photo-iphone" src="img/iphone-hand-mobile@1x.png" width="800" height="900" alt="Пример использования приложения">
+        <div class="download__photo-example">
+          <img class="download__photo-iphone" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Пример использования приложения">
+        </div>
         <div class="download__devices">
           <a class="download__btn" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
           <ul class="download__devices-list">
@@ -100,7 +99,7 @@
           </li>
         </ul>
         <div class="characteristics__phone-hello">
-          <img class="characteristics__phone-image" src="img/iphone-screen-mobile@1x.png" width="500" height="900" alt="Hello :)">
+          <img class="characteristics__phone-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Hello :)">
         </div>
       </section>
     </main>
