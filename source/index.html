@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип приложения PINK">
-      <button class="main-nav__open-menu" type="button">Открыть меню</button>
       <nav class="main-nav">
+        <div class="main-nav__intro main-nav__intro--hidden">
+          <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="72" height="25" alt="Логотип приложения PINK">
+          <button class="btn__open-menu btn__close-menu" type="button"></button>
+        </div>
         <div class="main-nav__wrapper">
-          <img class="main-nav__logo-image" src="http://placehold.it/150x100" alt="Логотип приложения PINK">
-          <button class="main-nav__close-menu" type="button">Закрыть меню</button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -32,23 +34,25 @@
 
     <main class="page-main">
       <section class="download">
-        <img class="download__photo-example" src="http://placehold.it/150x100" alt="Пример использования приложения">
-        <a class="download__btn" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+        <div class="download__photo-example">
+          <img class="download__photo-iphone" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Пример использования приложения">
+        </div>
         <div class="download__devices">
+          <a class="download__btn" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
           <ul class="download__devices-list">
             <li class="download__devices-item">
               <a class="download__devices-link" href="https://www.apple.com/la/ios/app-store/">
-                <img class="download__devices-logo" src="http://placehold.it/150x100" alt="Apple">
+                <img class="download__devices-logo" src="img/logo-apple.svg" alt="Apple">
               </a>
             </li>
             <li class="download__devices-item">
               <a class="download__devices-link" href="https://play.google.com/store/apps">
-                <img class="download__devices-logo" src="http://placehold.it/150x100" alt="Android">
+                <img class="download__devices-logo" src="img/logo-android.svg" alt="Android">
               </a>
             </li>
             <li class="download__devices-item">
               <a class="download__devices-link" href="https://www.microsoft.com/en-us/store/apps/windows">
-                <img class="download__devices-logo" src="http://placehold.it/150x100" alt="Windows">
+                <img class="download__devices-logo" src="img/logo-microsoft.svg" alt="Windows">
               </a>
             </li>
           </ul>
@@ -95,7 +99,7 @@
           </li>
         </ul>
         <div class="characteristics__phone-hello">
-          <img src="http://placehold.it/150x100" alt="Hello :)">
+          <img class="characteristics__phone-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Hello :)">
         </div>
       </section>
     </main>
