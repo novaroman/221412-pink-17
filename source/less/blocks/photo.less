@@ -1,0 +1,295 @@
+.photo__title {
+  width: 320px;
+  height: 185px;
+
+  background-color: #ffffff;
+}
+
+.photo__title-text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+
+  text-align: center;
+
+  margin: 0;
+  padding: 55px 40px;
+}
+
+.photo__panorama-day {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.photo__panorama-description {
+  position: relative;
+  width: 280px;
+
+  margin-top: -5px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.photo__panorama-author {
+  display: inline-block;
+
+  font-size: 14px;
+  font-weight: 700px;
+
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
+.photo__panorama-time-ago {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.photo__panorama-text {
+  font-size: 14px;
+  line-height: 24px;
+
+  margin: 0;
+
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.photo__panorama-likes {
+  font-size: 12px;
+
+  color: #d22856;
+
+  margin: 0;
+
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 15px;
+    height: 13px;
+
+    left: 20px;
+
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.photo-recent__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-recent__item-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-recent__image-full {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.photo-recent__description-wrapper {
+  position: relative;
+  width: 280px;
+
+  margin-top: -5px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.photo-recent__author {
+  display: inline-block;
+
+  font-size: 14px;
+  font-weight: 700px;
+
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
+.photo-recent__time-ago {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.photo-recent__text {
+  font-size: 14px;
+  line-height: 24px;
+
+  margin: 0;
+
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.photo-recent__likes {
+  font-size: 12px;
+
+  color: #d22856;
+
+  margin: 0;
+
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 15px;
+    height: 13px;
+
+    left: 20px;
+
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  .photo__panorama-medium {
+    display: none;
+  }
+
+  .photo-recent__image-medium {
+    display: none;
+  }
+
+  .photo-recent__image-big {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .photo__panorama-big {
+    display: none;
+  }
+
+  .photo-recent__image-big {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .photo__title {
+    width: 660px;
+    min-height: 230px;
+  }
+
+  .photo__title-text {
+    font-size: 18px;
+
+    padding-top: 100px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 80px;
+  }
+
+  .photo__panorama-small {
+    display: none;
+  }
+
+  .photo__panorama-description {
+    width: 620px;
+  }
+
+  // photo-list
+
+  .photo-recent__wrapper {
+    margin-top: 50px;
+  }
+
+  .photo-recent__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .photo-recent__item {
+    margin-bottom: 20px;
+  }
+
+  .photo-recent__image-full {
+    margin: 0;
+  }
+
+  .photo-recent__image-small {
+    display: none;
+  }
+
+  .photo-recent__description-wrapper {
+    width: 300px;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .photo-recent__author {
+    padding-top: 30px;
+    padding-left: 27px;
+  }
+
+  .photo-recent__text {
+    padding-top: 10px;
+    padding-left: 27px;
+    padding-right: 38px;
+  }
+
+  .photo-recent__likes {
+    padding-left: 27px;
+
+    &::before {
+      left: 255px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo__title {
+    width: 1200px;
+  }
+
+  .photo__title-text {
+    padding-left: 310px;
+    padding-right: 310px;
+  }
+
+  .photo__panorama-medium {
+    display: none;
+  }
+
+  .photo__panorama-description {
+    width: 940px;
+
+    margin-right: 130px;
+    margin-left: 130px;
+  }
+
+  .photo-recent__wrapper {
+    width: 980px;
+
+    margin-left: 110px;
+  }
+
+  .photo-recent__image-medium {
+    display: none;
+  }
+}

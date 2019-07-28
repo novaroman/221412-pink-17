@@ -1,11 +1,29 @@
-.main-nav__intro {
-  background-color: #283645;
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
 }
 
-.main-nav__logo-image {
+.main-nav__logo {
   padding-top: 22px;
   padding-bottom: 22px;
   padding-left: 20px;
+}
+
+.main-nav__logo--medium {
+  display: none;
+}
+
+.main-nav__logo--big {
+  display: none;
+}
+
+.main-nav__intro {
+  display: flex;
+
+  box-sizing: border-box;
+
+  height: 70px;
+  background-color: #283645;
 }
 
 .main-nav__wrapper {
@@ -23,13 +41,25 @@
 .main-nav__item {
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 80px;
+  padding-right: 80px;
 
   text-align: center;
 
   border-top: 2px solid #485461;
   border-bottom: 2px solid #000001;
+
+  &:hover {
+    .main-nav__link {
+      color: #d22856;
+    }
+  }
+
+  &:active {
+    .main-nav__link {
+      color: #6c3149;
+    }
+  }
 }
 
 .main-nav__link {
@@ -39,12 +69,87 @@
 
   color: #ffffff;
   text-decoration: none;
+}
 
-  &:hover {
-    color: #d22856;
+@media (min-width: 768px) {
+  .main-nav {
+    min-width: 660px;
   }
 
-  &:active {
-    color: #6c3149;
+  .main-nav__logo--small {
+    display: none;
+  }
+
+  .main-nav__logo--medium {
+    display: block;
+
+    padding-top: 25px;
+    padding-bottom: 45px;
+  }
+
+  .main-nav__intro {
+    min-height: 110px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    position: fixed;
+    z-index: 1;
+    margin: auto;
+    overflow: auto;
+
+    left: 0;
+    right: 0;
+
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__logo--medium {
+    display: none;
+  }
+
+  .main-nav__logo--big {
+    display: block;
+  }
+
+  .main-nav__intro {
+    min-width: 400px;
+
+    padding-left: 105px;
+    padding-top: 5px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__wrapper {
+    min-width: 800px;
+
+    box-sizing: border-box;
+    padding-right: 125px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__list {
+    border-top: none;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    border: none;
+
+    padding: 0;
+
+    padding-top: 38px;
+    padding-bottom: 38px;
   }
 }
