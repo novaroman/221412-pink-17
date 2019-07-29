@@ -27,18 +27,6 @@
 }
 
 .social-links__item {
-  margin-left: 10px;
-
-  &:first-child {
-    margin-left: 0;
-  }
-
-  &:nth-child(3n+4) {
-    margin-left: 0;
-  }
-}
-
-.social-links__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,6 +36,16 @@
 
   border: 3px solid #e9ebec;
   border-radius: 50% 50%;
+
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:nth-child(3n+4) {
+    margin-left: 0;
+  }
 
   &:hover {
     border-color: #2e3b4a;
