@@ -16,10 +16,33 @@
   padding: 55px 40px;
 }
 
+.photo__panorama-wrapper {
+  position: relative;
+}
+
 .photo__panorama-day {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
+
+  &::before {
+    content: "ПАНОРАМА ДНЯ";
+
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+
+    text-align: center;
+
+    padding: 6px 15px;
+
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+    background-color: #d22856;
+  }
 }
 
 .photo__panorama-description {
@@ -162,6 +185,12 @@
 }
 
 @media (max-width: 768px) {
+  .photo {
+    width: 320px;
+
+    margin: 0 auto;
+  }
+
   .photo__panorama-medium {
     display: none;
   }
@@ -186,6 +215,12 @@
 }
 
 @media (min-width: 768px) {
+  .photo {
+    width: 660px;
+
+    margin: 0 auto;
+  }
+
   .photo__title {
     width: 660px;
     min-height: 230px;
@@ -198,6 +233,12 @@
     padding-left: 110px;
     padding-right: 110px;
     padding-bottom: 80px;
+  }
+
+  .photo__panorama-day {
+    &::before {
+      top: 57px;
+    }
   }
 
   .photo__panorama-small {
@@ -268,6 +309,12 @@
 }
 
 @media (min-width: 1200px) {
+  .photo {
+    width: 1200px;
+
+    margin: 0 auto;
+  }
+
   .photo__title {
     width: 1200px;
   }
@@ -281,11 +328,33 @@
     display: none;
   }
 
+  .photo__panorama-day {
+    &::before {
+      top: 53px;
+      right: 130px;
+    }
+  }
+
   .photo__panorama-description {
     width: 940px;
 
     margin-right: 130px;
     margin-left: 130px;
+  }
+
+  .photo__panorama-text {
+    padding-bottom: 30px;
+    padding-top: 5px;
+  }
+
+  .photo__panorama-likes {
+    position: absolute;
+    right: 70px;
+    top: 8px;
+
+    &::before {
+      left: 160px;
+    }
   }
 
   .photo-recent__wrapper {
