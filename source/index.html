@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__intro main-nav__intro--hidden">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__intro">
           <a href="index.html">
             <svg class="main-nav__logo main-nav__logo--small" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
             <g>
@@ -63,12 +62,25 @@
             </g>
             </svg>
           </a>
-          <button class="btn__toggle" type="button"></button>
+          <button class="btn__toggle" type="button">
+            <svg class="btn__toggle-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+              <g id="miu">
+                <g id="editor_list_view_hambuger_menu_glyph">
+                  <g>
+                    <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                  </g>
+                  <g>
+                    <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </button>
         </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="photo.html">Фотографии</a>
@@ -86,34 +98,36 @@
 
     <main class="page-main">
       <section class="download">
-        <div class="download__photo-example">
-          <img class="download__photo-iphone-small" src="img/iphone-hand-mobile@1x.png" width="256" height="290" alt="Пример использования приложения">
-          <img class="download__photo-iphone-medium" src="img/iphone-hand-tablet@1x.png" width="660" height="545" alt="Пример использования приложения">
-          <img class="download__photo-iphone-big" src="img/iphone-hand-desktop@1x.png" width="1050" height="645" alt="Пример использования приложения">
-        </div>
-        <div class="download__devices">
-          <p class="download__tagline">Взгляните на жизнь иначе!</p>
-          <a class="download__btn" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
-          <ul class="download__devices-list">
-            <li class="download__devices-item">
-              <a class="download__devices-link" href="https://www.apple.com/la/ios/app-store/">
-                <img class="download__devices-logo" src="img/logo-apple.svg" alt="Apple">
-              </a>
-            </li>
-            <li class="download__devices-item">
-              <a class="download__devices-link" href="https://play.google.com/store/apps">
-                <img class="download__devices-logo" src="img/logo-android.svg" alt="Android">
-              </a>
-            </li>
-            <li class="download__devices-item">
-              <a class="download__devices-link" href="https://www.microsoft.com/en-us/store/apps/windows">
-                <img class="download__devices-logo" src="img/logo-microsoft.svg" alt="Windows">
-              </a>
-            </li>
-          </ul>
-          <p class="download__devices-availability">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+        <div class="download__wrapper container">
+          <div class="download__photo-example">
+            <img class="download__photo-iphone-small" src="img/iphone-hand-mobile@1x.png" width="256" height="290" alt="Пример использования приложения">
+            <img class="download__photo-iphone-medium" src="img/iphone-hand-tablet@1x.png" width="660" height="545" alt="Пример использования приложения">
+            <img class="download__photo-iphone-big" src="img/iphone-hand-desktop@1x.png" width="1050" height="645" alt="Пример использования приложения">
+          </div>
+          <div class="download__devices">
+            <p class="download__tagline">Взгляните на жизнь иначе!</p>
+            <a class="download__btn" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+            <ul class="download__devices-list">
+              <li class="download__devices-item">
+                <a class="download__devices-link" href="https://www.apple.com/la/ios/app-store/">
+                  <img class="download__devices-logo" src="img/logo-apple.svg" alt="Apple">
+                </a>
+              </li>
+              <li class="download__devices-item">
+                <a class="download__devices-link" href="https://play.google.com/store/apps">
+                  <img class="download__devices-logo" src="img/logo-android.svg" alt="Android">
+                </a>
+              </li>
+              <li class="download__devices-item">
+                <a class="download__devices-link" href="https://www.microsoft.com/en-us/store/apps/windows">
+                  <img class="download__devices-logo" src="img/logo-microsoft.svg" alt="Windows">
+                </a>
+              </li>
+            </ul>
+            <p class="download__devices-availability">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
         </div>
       </section>
 
@@ -127,50 +141,54 @@
           </h2>
         </header>
         <div class="linear-gradient"></div>
-        <ul class="characteristics__list">
-          <li class="characteristics__item">
-            <img class="characteristics__item-image" src="img/iphone-screen-1-desktop@1x.png" alt="Чёрно-белый фильтр">
-            <h3 class="characteristics__item-title">
-              Поднимает настроение
-            </h3>
-            <p class="characteristics__item-content">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="characteristics__item">
-            <img class="characteristics__item-image" src="img/iphone-screen-2-desktop@1x.png" alt="Розовый фильтр">
-            <h3 class="characteristics__item-title">
-              Меняет мир вокруг
-            </h3>
-            <p class="characteristics__item-content">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </li>
-          <li class="characteristics__item">
-            <img class="characteristics__item-image" src="img/iphone-screen-3-desktop@1x.png" alt="Розовый фильтр со смайликом :)">
-            <h3 class="characteristics__item-title">
-              Заводит новых друзей
-            </h3>
-            <p class="characteristics__item-content">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
-        <div class="characteristics__phone-hello">
-          <img class="characteristics__phone-image-small" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Hello :)">
-          <img class="characteristics__phone-image-medium" src="img/iphone-screen-3-tablet@1x.png" width="267" height="491" alt="Hello :)">
-        </div>
+        <div class="characteristics__wrapper">
+          <ul class="characteristics__list">
+            <li class="characteristics__item">
+              <img class="characteristics__item-image" src="img/iphone-screen-1-desktop@1x.png" alt="Чёрно-белый фильтр">
+              <h3 class="characteristics__item-title">
+                Поднимает настроение
+              </h3>
+              <p class="characteristics__item-content">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="characteristics__item">
+              <img class="characteristics__item-image" src="img/iphone-screen-2-desktop@1x.png" alt="Розовый фильтр">
+              <h3 class="characteristics__item-title">
+                Меняет мир вокруг
+              </h3>
+              <p class="characteristics__item-content">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="characteristics__item">
+              <img class="characteristics__item-image" src="img/iphone-screen-3-desktop@1x.png" alt="Розовый фильтр со смайликом :)">
+              <h3 class="characteristics__item-title">
+                Заводит новых друзей
+              </h3>
+              <p class="characteristics__item-content">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+          <div class="characteristics__phone-hello">
+            <img class="characteristics__phone-image-small" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Hello :)">
+            <img class="characteristics__phone-image-medium" src="img/iphone-screen-3-tablet@1x.png" width="267" height="491" alt="Hello :)">
+          </div>
 
-        <div class="characteristics__effect">
-          <h3 class="characteristics__effect-title">
-            Эффект<br> на 24 часа!
-          </h3>
-          <p class="characteristics__effect-content">
-            Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!
-          </p>
-          <a class="characteristics__effect-link" href="#">Узнать больше об исследовании</a>
+          <div class="characteristics__effect">
+            <h3 class="characteristics__effect-title">
+              Эффект<br> на 24 часа!
+            </h3>
+            <p class="characteristics__effect-content">
+              Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!
+            </p>
+            <a class="characteristics__effect-link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
     </main>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>

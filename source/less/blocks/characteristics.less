@@ -15,14 +15,16 @@
   padding-top: 50px;
 }
 
+.characteristics__wrapper {
+  background-color: #f2f2f2;
+}
+
 .characteristics__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 
   padding-top: 55px;
-
-  background-color: #f2f2f2;
 }
 
 .characteristics__item {
@@ -68,6 +70,12 @@
 }
 
 @media (max-width: 767px) {
+  .characteristics {
+    width: 320px;
+
+    margin: 0 auto;
+  }
+
   .characteristics__item-image {
     display: none;
   }
@@ -105,6 +113,8 @@
 
   .characteristics__list {
     padding-top: 20px;
+
+    width: 660px;
   }
 
   .characteristics__item {
@@ -128,7 +138,11 @@
   .characteristics__phone-hello {
     padding: 0;
 
+    width: 660px;
+
     margin-top: -491px;
+    margin-left: auto;
+    margin-right: auto;
 
     background-color: transparent;
   }
@@ -141,6 +155,7 @@
     position: relative;
 
     width: 660px;
+    margin: 0 auto;
 
     padding-bottom: 30px;
 
@@ -229,8 +244,9 @@
 
   .characteristics__list {
     display: flex;
-
     flex-wrap: wrap;
+
+    width: 1200px;
 
     padding: 0;
   }
