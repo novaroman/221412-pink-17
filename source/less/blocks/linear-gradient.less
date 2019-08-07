@@ -1,5 +1,5 @@
 .linear-gradient {
-  width: 320px;
+  width: 100%;
   height: 30px;
 
   background-image: linear-gradient(to right bottom, #ffffff 50%, #f2f2f2 50%);
@@ -7,16 +7,14 @@
   margin-top: 36px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .linear-gradient {
-    width: 100%;
     height: 50px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @desktop-width) {
   .linear-gradient {
-    width: 100%;
     height: 100px;
 
     margin-top: 90px;
