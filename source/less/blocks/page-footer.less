@@ -10,6 +10,30 @@
   margin: 40px 75px;
 }
 
+.page-footer__logo-link {
+  &:hover {
+    .logo__pink-footer {
+      fill: #d22856;
+    }
+  }
+
+  &:active {
+    .logo__pink-footer,
+    .logo__glasses-point {
+      fill: rgba(40, 54, 69, 0.3);
+    }
+
+    .logo__glasses-pink-point,
+    .logo__point {
+      fill: rgba(210, 40, 86, 0.3);
+    }
+
+    .logo__glasses-pink {
+      fill: rgba(210, 40, 86, 0.3);
+    }
+  }
+}
+
 .page-footer__social {
   width: 200px;
 
@@ -95,6 +119,20 @@
   }
 }
 
+@media (max-width: @desktop-width) {
+  .logo__glasses-point {
+    display: none;
+  }
+
+  .logo__glasses-pink-point {
+    display: none;
+  }
+
+  .logo__point {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
     width: 620px;
@@ -124,5 +162,9 @@
 @media (min-width: @desktop-width) {
   .page-footer {
     width: 940px;
+  }
+
+  .logo__glasses-pink {
+    display: none;
   }
 }
