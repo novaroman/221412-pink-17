@@ -83,6 +83,10 @@
         <div class="download__wrapper container">
           <div class="download__photo-example">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
               <img class="download__photo-iphone" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" width="256" height="290" alt="Пример использования приложения">
@@ -129,6 +133,8 @@
           <ul class="characteristics__list">
             <li class="characteristics__item">
               <picture>
+                <source srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+
                 <img class="characteristics__item-image" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png" width="292" height="302" alt="Чёрно-белый фильтр">
               </picture>
               <h3 class="characteristics__item-title">
@@ -140,6 +146,8 @@
             </li>
             <li class="characteristics__item">
               <picture>
+                <source srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+
                 <img class="characteristics__item-image" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png" width="292" height="302" alt="Чёрно-белый фильтр">
               </picture>
               <h3 class="characteristics__item-title">
@@ -151,6 +159,8 @@
             </li>
             <li class="characteristics__item">
               <picture>
+                <source srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+
                 <img class="characteristics__item-image" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png" width="292" height="302" alt="Чёрно-белый фильтр">
               </picture>
               <h3 class="characteristics__item-title">
@@ -163,6 +173,9 @@
           </ul>
           <div class="characteristics__phone-hello">
             <picture>
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+              <source srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+
               <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
               <img class="characteristics__phone-image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="Hello :)">
             </picture>
