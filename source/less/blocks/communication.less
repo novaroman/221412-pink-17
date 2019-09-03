@@ -1,0 +1,149 @@
+.communication {
+  position: relative;
+  background-color: #ffffff;
+  min-width: 320px;
+}
+
+.communication__title {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+
+  margin: 0;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+.communication__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.communication__list-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+
+  margin: 0;
+  margin-top: 30px;
+}
+
+.communication__phone-link {
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+
+  color: #d22856;
+}
+
+.communication__mail-link {
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+
+  color: #d22856;
+
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: #ced0d2;
+    text-decoration: none;
+  }
+}
+
+.communication__address-description {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  color: #d22856;
+}
+
+.communication__triangle {
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  top: 66px;
+}
+
+.communication__triangle-image {
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .communication__title {
+    font-size: 40px;
+
+    padding: 55px 145px;
+
+    margin: 0;
+  }
+
+  .communication__list {
+    width: 620px;
+
+    margin: 0 auto;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .communication__list-item {
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .communication__list-title {
+    margin-bottom: 15px;
+  }
+
+  .communication__list-item:last-child {
+    padding: 0 165px;
+  }
+
+  .communication__triangle {
+    top: 66px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .communication__title {
+    font-size: 50px;
+
+    padding: 65px 250px;
+  }
+
+  .communication__list {
+    width: 960px;
+  }
+
+  .communication__list-item {
+    flex-grow: 0;
+
+    margin: 0 10px;
+  }
+
+  .communication__list-item:last-child {
+    padding: 0;
+  }
+
+  .communication__mail {
+    order: 1;
+  }
+
+  .communication__triangle {
+    top: 65px;
+  }
+}

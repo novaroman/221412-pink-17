@@ -1,0 +1,148 @@
+.slider__input {
+  display: none;
+}
+
+.slider__toggles {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  width: 75px;
+
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider__toggles--price {
+  margin-top: 0;
+
+  padding-bottom: 35px;
+}
+
+.slider__toggle {
+  font-size: 0;
+
+  position: absolute;
+
+  width: 6px;
+  height: 6px;
+  background-image: url("../img/icon-shape.svg");
+
+  margin-left: 36px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:nth-child(3n) {
+    margin-left: 68px;
+  }
+}
+
+#feedback-input-1:checked ~ .slider__toggles label[for="feedback-input-1"],
+#feedback-input-2:checked ~ .slider__toggles label[for="feedback-input-2"],
+#feedback-input-3:checked ~ .slider__toggles label[for="feedback-input-3"] {
+  background-image: none;
+  border: 3px solid black;
+  border-radius: 50%;
+
+  left: -3px;
+
+  &:first-child {
+    left: 0;
+  }
+}
+
+#package-input-1:checked ~ .slider__toggles label[for="package-input-1"],
+#package-input-2:checked ~ .slider__toggles label[for="package-input-2"],
+#package-input-3:checked ~ .slider__toggles label[for="package-input-3"] {
+  background-image: none;
+  border: 3px solid black;
+  border-radius: 50%;
+
+  left: -3px;
+
+  &:first-child {
+    left: 0;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .slider__prev {
+    display: none;
+  }
+
+  .slider__next {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider__toggles {
+    margin-top: 38px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__toggles {
+    display: none;
+  }
+
+  .slider__prev {
+    position: absolute;
+    top: 230px;
+    left: 140px;
+
+    font-size: 0;
+    padding: 0;
+
+    width: 25px;
+    height: 25px;
+
+    background-color: transparent;
+
+    border: 2px solid #bec2c7;
+    border-right: none;
+    border-bottom: none;
+
+    transform: rotate(-45deg);
+
+    &:hover {
+      border-color: #7e868f;
+    }
+
+    &:active {
+      border-color: #e9ebec;
+    }
+  }
+
+  .slider__next {
+    position: absolute;
+    top: 230px;
+    right: 140px;
+
+    font-size: 0;
+    padding: 0;
+
+    width: 25px;
+    height: 25px;
+
+    background-color: transparent;
+
+    border: 2px solid #bec2c7;
+    border-right: none;
+    border-bottom: none;
+
+    transform: rotate(135deg);
+
+    &:hover {
+      border-color: #7e868f;
+    }
+
+    &:active {
+      border-color: #e9ebec;
+    }
+  }
+}

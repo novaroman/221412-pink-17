@@ -1,0 +1,155 @@
+.modal-form {
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.24);
+
+  background-color: #ffffff;
+
+  display: none;
+}
+
+.modal-form--success {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 670px;
+
+  z-index: 999;
+}
+
+.modal-form--failure {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 1360px;
+
+  z-index: 999;
+}
+
+.modal-form__top {
+  padding-top: 45px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 42px;
+}
+
+.modal-form__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.modal-form__text {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 24px;
+
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.modal-form__text--failure {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.modal-form__bottom {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.modal-form__bottom--success {
+  padding-top: 48px;
+  padding-bottom: 52px;
+}
+
+.modal-form__bottom--failure {
+  background-color: #ffffff;
+
+  padding-bottom: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-form {
+    width: 460px;
+
+    margin: 0 auto;
+  }
+
+  .modal-form--success {
+    bottom: 1240px;
+  }
+
+  .modal-form--failure {
+    bottom: 1865px;
+  }
+
+  .modal-form__top {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  .modal-form__title {
+    font-size: 30px;
+
+    padding: 0 40px;
+  }
+
+  .modal-form__text {
+    font-size: 18px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .modal-form__bottom {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-form {
+    width: 780px;
+  }
+
+  .modal-form--success {
+    bottom: 370px;
+  }
+
+  .modal-form--failure {
+    bottom: 830px;
+  }
+
+  .modal-form__text {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .form-award__button--success {
+    width: 460px;
+  }
+
+  .modal-form__text--failure {
+    padding-bottom: 20px;
+  }
+
+  .modal-form__bottom--failure {
+    padding-top: 45px;
+
+    background-color: #f2f2f2;
+  }
+}

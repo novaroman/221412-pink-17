@@ -184,6 +184,21 @@
   }
 }
 
+.photo-recent__conclusion {
+  min-width: 280px;
+
+  margin: 0 auto;
+}
+
+.photo-recent__conclusion-text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+
+  margin: 0;
+  padding: 55px 0px;
+}
+
 @media (max-width: @mobile-width-only) {
   .photo {
     width: 320px;
@@ -227,8 +242,6 @@
   .photo__panorama-description {
     width: 620px;
   }
-
-  // photo-list
 
   .photo-recent__wrapper {
     margin-top: 50px;
@@ -285,6 +298,12 @@
     &::before {
       left: 255px;
     }
+  }
+
+  .photo-recent__conclusion-text {
+    font-size: 18px;
+
+    padding: 75px 0px;
   }
 }
 
@@ -357,5 +376,9 @@
     position: absolute;
 
     bottom: 0;
+  }
+
+  .photo-recent__conclusion-text {
+    padding: 63px 0px;
   }
 }
