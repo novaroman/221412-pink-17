@@ -8,9 +8,9 @@
 
   position: relative;
 
-  width: 75px;
+  width: 65px;
 
-  margin-top: 35px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -18,7 +18,11 @@
 .slider__toggles--price {
   margin-top: 0;
 
-  padding-bottom: 35px;
+  padding-bottom: 55px;
+
+  &:first-child {
+    margin-left: 4px;
+  }
 }
 
 .slider__toggle {
@@ -30,14 +34,14 @@
   height: 6px;
   background-image: url("../img/icon-shape.svg");
 
-  margin-left: 36px;
+  margin-left: 30px;
 
   &:first-child {
     margin-left: 0;
   }
 
   &:nth-child(3n) {
-    margin-left: 68px;
+    margin-left: 55px;
   }
 }
 
@@ -83,6 +87,10 @@
   .slider__toggles {
     margin-top: 38px;
   }
+
+  .slider__toggles--feedback {
+    margin-top: 47px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -92,14 +100,14 @@
 
   .slider__prev {
     position: absolute;
-    top: 230px;
-    left: 140px;
+    top: 218px;
+    left: 256px;
 
     font-size: 0;
     padding: 0;
 
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 
     background-color: transparent;
 
@@ -120,14 +128,14 @@
 
   .slider__next {
     position: absolute;
-    top: 230px;
-    right: 140px;
+    top: 218px;
+    right: 256px;
 
     font-size: 0;
     padding: 0;
 
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 
     background-color: transparent;
 

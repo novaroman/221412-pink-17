@@ -13,11 +13,12 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  letter-spacing: 0.2px;
 
-  padding: 0 7px;
+  padding: 0;
 
   margin: 0;
-  margin-top: 60px;
+  margin-top: 45px;
 }
 
 .form_text-invitation {
@@ -34,14 +35,22 @@
   margin: 0 auto;
   list-style: none;
 
-  margin-top: 55px;
+  margin-top: 34px;
 }
 
 .form-award__username-item {
-  margin-top: 25px;
+  margin-top: -1px;
 
   &:first-child {
     margin-top: 0;
+  }
+
+  &:nth-child(n+1) {
+    margin-bottom: 19px;
+  }
+
+  &:last-child {
+    margin-bottom: -5px;
   }
 }
 
@@ -55,8 +64,10 @@
 .form-award__label {
   display: block;
 
+  letter-spacing: -0.7px;
+
   margin-top: 25px;
-  margin-left: 23px;
+  margin-left: 25px;
 
   &:first-child {
     margin-top: 0;
@@ -64,16 +75,16 @@
 }
 
 .form-award__input {
-  width: 330px;
+  width: 240px;
 
-  padding: 23px 20px;
+  padding: 18px 20px;
 
   border: 2px solid #e5e5e5;
   border-radius: 3px;
 
   font-size: 18px;
 
-  margin-top: 15px;
+  margin-top: 6px;
 
   &:hover {
     border-color: #283645;
@@ -102,13 +113,21 @@
   font-weight: 400;
   text-align: center;
   line-height: 18px;
+  letter-spacing: -0.5px;
 
   margin-left: 20px;
   margin-right: 20px;
 
   padding: 0 20px;
+  padding-top: 104px;
+}
 
-  padding-top: 100px;
+.form-award__app-title {
+  padding-top: 99px;
+}
+
+.form-award__comment-title {
+  padding-top: 97px;
 }
 
 .form-award__choice-list {
@@ -128,8 +147,12 @@
 .form-award__choice-item {
   position: relative;
 
-  margin-top: 40px;
+  margin-top: 49px;
   margin-left: 70px;
+
+  &:nth-child(n+1) {
+    margin-bottom: 12px;
+  }
 
   &:hover {
     .form-award__choice-label::before {
@@ -162,7 +185,7 @@
 
     position: absolute;
     top: -10px;
-    left: -60px;
+    left: -67px;
 
     width: 35px;
     height: 35px;
@@ -208,16 +231,16 @@
   margin: 0;
   list-style: none;
 
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .form-award__contacts-item {
-  margin-top: 25px;
+  margin-top: 18px;
 
   &:first-child {
-    margin-top: 0;
+    margin-top: 4px;
   }
 }
 
@@ -232,14 +255,18 @@
 
   margin: 0 auto;
 
-  padding-bottom: 40px;
+  padding-bottom: 51px;
 }
 
 .form-award__radio-item {
   position: relative;
 
-  margin-top: 40px;
+  margin-top: 47px;
   margin-left: 70px;
+
+  &:nth-child(n+2) {
+    margin-top: 53px;
+  }
 
   &:hover {
     .form-award__radio-label::before {
@@ -272,7 +299,7 @@
 
     position: absolute;
     top: -10px;
-    left: -60px;
+    left: -68px;
 
     width: 35px;
     height: 35px;
@@ -314,13 +341,15 @@
 
   box-sizing: border-box;
 
-  padding: 22px 15px;
+  padding: 14px 21px;
 
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 16px;
 
   font-size: 18px;
   color: #283645;
+  letter-spacing: 0.3px;
+  line-height: 31px;
 
   border: 2px solid #e5e5e5;
   border-radius: 3px;
@@ -340,7 +369,7 @@
 
   margin: 0 auto;
 
-  margin-top: 50px;
+  margin-top: 48px;
 }
 
 .form-award__button {
@@ -355,8 +384,8 @@
   width: 100%;
 
   padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 17px;
+  padding-bottom: 16px;
 
   border: none;
   border-radius: 3px;
@@ -381,25 +410,32 @@
   color: #283645;
   text-align: center;
 
-  margin-top: 45px;
+  margin-top: 36px;
 
-  sup {
-    font-size: 14px;
-    color: #d22856;
-  }
+  padding-left: 1px;
+  letter-spacing: -0.7px;
+}
 
-  span {
-    display: none;
-  }
+.form-award__necessarily-champ {
+  display: none;
+}
+
+.form-award__necessarily-red {
+  display: initial;
+
+  font-size: 14px;
+  color: #d22856;
 }
 
 @media (min-width: @tablet-width) {
   .form_title {
+    padding: 0 115px;
+
+    margin-top: 94px;
+  }
+
+  .form_text {
     font-size: 18px;
-
-    padding: 0 150px;
-
-    margin-top: 100px;
   }
 
   .form_text-invitation {
@@ -408,6 +444,8 @@
 
   .form-award__username-list {
     width: 620px;
+
+    margin-top: 64px;
 
     order: 1;
   }
@@ -423,6 +461,18 @@
     margin-right: 20px;
   }
 
+  .form-award__input {
+    width: 100%;
+
+    letter-spacing: 0.4px;
+
+    padding: 18px 17px;
+
+    &:nth-child(n+1) {
+      margin-bottom: 30px;
+    }
+  }
+
   .form-award__app {
     order: 2;
 
@@ -431,9 +481,11 @@
 
     background-color: inherit;
 
-    margin-top: 65px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 615px;
+
+    margin: 0 auto;
+    margin-top: 34px;
+    margin-bottom: 51px;
   }
 
   .form-award__app-title {
@@ -442,14 +494,15 @@
 
   .form-award__radio-list {
     margin-top: 55px;
-    margin-bottom: 55px;
-    margin-left: 60px;
+    margin-bottom: 63px;
+    margin-left: 62px;
 
     padding-bottom: 0;
   }
 
   .form-award__radio-item {
     margin-top: 55px;
+    margin-left: 62px;
 
     &:first-child {
       margin-top: 0;
@@ -459,9 +512,9 @@
   .form-award__user-contacts {
     order: 3;
 
-    margin-top: 65px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 615px;
+
+    margin: 0 auto;
 
     border: 2px solid #e5e5e5;
     border-radius: 3px;
@@ -477,10 +530,10 @@
   }
 
   .form-award__contacts-list {
-    margin-top: 45px;
+    margin-top: 28px;
     margin-left: 60px;
     margin-right: 60px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 
   .form-award__contacts-item {
@@ -491,16 +544,22 @@
   }
 
   .form-award__contacts-item--phone {
+    width: 455px;
+
+    &:first-child {
+      margin-top: -1px;
+    }
+
     &::after {
       content: "";
 
-      width: 67px;
-      height: 67px;
+      width: 64px;
+      height: 57px;
 
       position: absolute;
 
-      top: 2px;
-      right: 2px;
+      top: 8px;
+      right: -42px;
 
       background-color: #e5e5e5;
       background-image: url("../img/icon-phone.svg");
@@ -511,16 +570,20 @@
   }
 
   .form-award__contacts-item--email {
+    width: 455px;
+
+    margin-top: 24px;
+
     &::after {
       content: "";
 
-      width: 67px;
-      height: 67px;
+      width: 64px;
+      height: 57px;
 
       position: absolute;
 
-      top: 2px;
-      right: 2px;
+      top: 8px;
+      right: -42px;
 
       background-color: #e5e5e5;
       background-image: url("../img/icon-mail.svg");
@@ -532,16 +595,24 @@
 
   .form-award__input-phone,
   .form-award__input-email {
-    margin-top: 0;
+    width: 463px;
+
+    margin-left: -2px;
   }
 
   .form-award__label-phone,
   .form-award__label-email {
-    margin-left: 20px;
+    margin-left: 17px;
 
-    &:first-child {
-      margin-top: 20px;
-    }
+    letter-spacing: -0.4px;
+  }
+
+  .form-award__label-phone:first-child {
+    margin-top: -20px;
+  }
+
+  .form-award__label-email:first-child {
+    margin-top: -19px;
   }
 
   .form-award__record {
@@ -552,9 +623,10 @@
 
     background-color: inherit;
 
-    margin-top: 65px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 616px;
+
+    margin: 0 auto;
+    margin-top: 58px;
   }
 
   .form-award__title-record {
@@ -563,11 +635,24 @@
 
   .form-award__choice-list {
     margin-left: 60px;
-    padding-bottom: 60px;
+
+    padding-bottom: 50px;
   }
 
   .form-award__choice-item {
-    margin-top: 60px;
+    margin-left: 66px;
+
+    &:first-child {
+      margin-top: 54px;
+    }
+
+    &:nth-child(n+2) {
+      margin-top: 49px;
+    }
+  }
+
+  .form-award__choice-label {
+    margin-left: -10px;
   }
 
   .form-award__comment {
@@ -578,9 +663,9 @@
 
     background-color: inherit;
 
-    margin-top: 65px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 614px;
+    margin: 0 auto;
+    margin-top: 51px;
   }
 
   .form-award__comment-title {
@@ -588,9 +673,13 @@
   }
 
   .form-award__comment-textarea {
-    margin: 50px 60px;
-    width: 600px;
-    padding: 22px 22px;
+    margin: 36px 60px;
+    margin-bottom: 45px;
+
+    width: 499px;
+    min-height: 197px;
+
+    padding: 14px 22px;
   }
 
   .form-award__submit {
@@ -599,11 +688,10 @@
     display: flex;
     align-items: baseline;
 
-    width: auto;
+    width: 620px;
 
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 65px;
+    margin: 0 auto;
+    margin-top: 48px;
     margin-bottom: 70px;
   }
 
@@ -614,13 +702,21 @@
   .form-award__necessarily-field {
     margin-left: auto;
   }
+
+  .form-award__necessarily-red {
+    font-size: 22px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form_title {
     margin: 0 120px;
 
-    padding: 0 180px;
+    padding: 0px 220px;
+  }
+
+  .form_text {
+    margin-top: 92px;
   }
 
   .form-award {
@@ -637,7 +733,7 @@
 
     margin: 0;
     margin-left: 10px;
-    margin-top: 70px;
+    margin-top: 79px;
 
     padding-right: 35px;
   }
@@ -645,26 +741,28 @@
   .form-award__app {
     width: 430px;
 
-    margin-left: 35px;
+    margin-left: 39px;
     margin-right: 10px;
+    margin-top: 70px;
   }
 
   .form-award__radio-list {
-    margin-left: 75px;
+    margin-left: 80px;
   }
 
   .form-award__user-contacts {
-    min-width: 930px;
+    min-width: 936px;
 
     margin: 0;
 
     margin-left: 10px;
     margin-right: 20px;
-    margin-top: 62px;
+    margin-top: 0;
   }
 
   .form-award__contacts-list {
     margin: 0;
+    margin-bottom: -7px;
 
     flex-direction: row;
   }
@@ -680,11 +778,19 @@
   .form-award__contacts-item--phone {
     margin-left: 60px;
     margin-right: 35px;
+
+    &::after {
+      right: 2px;
+    }
   }
 
   .form-award__contacts-item--email {
     margin-right: 60px;
     margin-left: 35px;
+
+    &::after {
+      right: 2px;
+    }
   }
 
   .form-award__label-phone,
@@ -692,10 +798,18 @@
     margin-bottom: 20px;
   }
 
-  .form-award__record {
-    width: 930px;
+  .form-award__input-phone {
+    width: 338px;
+  }
 
-    margin-top: 60px;
+  .form-award__input-email {
+    width: 338px;
+  }
+
+  .form-award__record {
+    width: 936px;
+
+    margin-top: 57px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -703,6 +817,7 @@
   .form-award__choice-list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     width: auto;
   }
@@ -738,13 +853,24 @@
   }
 
   .form-award__comment {
-    width: 930px;
+    width: 936px;
     margin-left: 10px;
     margin-right: 10px;
   }
 
   .form-award__comment-textarea {
-    height: 125px;
+    width: 818px;
+
+    margin: 0;
+    min-height: 0;
+
+    margin-top: 34px;
+    margin-bottom: 45px;
+    margin-left: 59px;
+
+    height: 126px;
+
+    padding: 13px 18px;
   }
 
   .form-award__submit {
@@ -752,13 +878,16 @@
 
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 40px;
+    margin-top: 45px;
     margin-bottom: 0;
   }
 
   .form-award__necessarily-field {
-    span {
-      display: inline-block;
-    }
+    letter-spacing: -0.4px;
+  }
+
+  .form-award__necessarily-red,
+  .form-award__necessarily-champ {
+    display: inline-block;
   }
 }

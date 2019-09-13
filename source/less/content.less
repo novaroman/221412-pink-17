@@ -46,7 +46,7 @@ body {
 .btn__toggle {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 14px;
 
   width: 60px;
   height: 45px;
@@ -81,8 +81,8 @@ body {
     content: "";
 
     position: absolute;
-    top: 25px;
-    right: 15px;
+    top: 21px;
+    right: 4px;
 
     width: 25px;
     height: 4px;
@@ -118,5 +118,15 @@ body {
 @media (min-width: @tablet-width) {
   .btn__toggle {
     top: 30px;
+    right: 57px;
+  }
+
+  .main-nav--opened .btn__toggle {
+    &::before,
+    &::after {
+      top: 25px;
+      right: 13px;
+      width: 30px;
+    }
   }
 }
